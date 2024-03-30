@@ -8,9 +8,7 @@ const Todo = () => {
 
   //usestate for text
   const [text, setText] = useState("");
-  const [checked,setChecked]= useState(()=>{
-    localStorage.get
-  })
+
    const todos = useSelector((state) => state.todos);
 
   const dispatch = useDispatch();
@@ -38,10 +36,6 @@ const Todo = () => {
    dispatch(deleteTodo(id));
   };
 
-  todos.map((todo)=>{
-    {console.log(todo.completed)}
-
-  })
 
 
 
@@ -128,6 +122,7 @@ const Container = styled.div`
       justify-items: center;
     }
     li p{
+      margin-left:14px;
       height: auto;
       width: 20rem;
       overflow-wrap: break-word;
